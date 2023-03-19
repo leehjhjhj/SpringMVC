@@ -31,6 +31,7 @@ public class RequestHeaderServlet extends HttpServlet {
         System.out.println("request.isSecure() = " + request.isSecure());
         System.out.println("--- REQUEST-LINE - end ---");
         System.out.println();
+
     }
     private static void printHeaders(HttpServletRequest request) {
         System.out.println("--- Headers - start ---");
@@ -38,6 +39,7 @@ public class RequestHeaderServlet extends HttpServlet {
                         .forEachRemaining(headerName -> System.out.println("headerName = " + headerName));
         System.out.println("--- Headers - end ---");
         System.out.println();
+
     }
 
 }
